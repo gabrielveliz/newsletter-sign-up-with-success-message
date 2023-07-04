@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+<main>
+  <div class="contenedor" id="con">
+    <div class="columnaizq">
+      <div class="stay"><span>Stay updated!</span></div>
+      <div class="join"><span>Join 60,000+ product managers receiving monthly updates on:</span></div>
+      <div class="product">
+        <div class="grilla">
+          <div class="icono"><img src="assets/images/icon-list.svg" alt=""></div>
+          <div class="detalle"><span>Product discovery and building what matters</span></div>
+        </div>
+        <div class="grilla">
+          <div class="icono"><img src="assets/images/icon-list.svg" alt=""></div>
+          <div class="detalle"><span>Measuring to ensure updates are a success</span></div>
+        </div>
+        <div class="grilla">
+          <div class="icono"><img src="assets/images/icon-list.svg" alt=""></div>
+          <div class="detalle"><span> And much more!</span></div>
+        </div>
+      </div>
+      <div class="cont_form">
+        <div class="doscol">
+          <div class="form_titulo"><span>Email address</span></div>
+          <div class="form_req der" id="idreq"><span>Valid email required</span></div>
+        </div>
+        
+        <div class="form_campo"><input type="text"  name="campo" id="campo_texto" placeholder="email@company.com"></div>
+        <div onclick="enviar()" class="form_boton">Subscribe to monthly newsletter</div>
+      </div>
+    </div>
+    <div class="columnader">
+      <img class="imgdesk" src="assets/images/illustration-sign-up-desktop.svg" alt="imagensign">
+      <img class="imgmob" src="assets/images/illustration-sign-up-mobile.svg" alt="imagensign">
+    </div>
+  </div>
+    <!-- Sign-up form end -->
+
+
+
+
+
+
+
+
+  <!-- Success message start -->
+  <div class="contenedorenviado" id="env">
+    <div class="imagensuccess"><img src="assets/images/icon-success.svg" alt="success"></div>
+    <div class="thank"><span>Thanks for subscribing!</span></div>
+    <div class="confir"><span>
+      A confirmation email has been sent to <span class="negrita" id="texto_correo"></span>
+  Please open it and click the button inside to confirm your subscription.
+    </span></div>
+
+    <div class="boton_dis" onclick="regresar()">Dismiss message</div>
+  </div>
+
+  <!-- Success message end -->
+
+</main>
+
+
+  
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/gabrielveliz" target="_blank">Gabriel Veliz</a>.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
